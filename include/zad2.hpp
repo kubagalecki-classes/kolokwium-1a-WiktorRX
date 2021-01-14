@@ -19,7 +19,7 @@ gotujMakaron(const std::string& s)
   char pierw = s.front();
   char ost = s.back();
   if(pierw==ost) 
-  return new Tagliatellle(3.14, 0.42, 0.1);
+  return new Tagliatelle(3.14, 0.42, 0.1);
   else
   return new Penne();
 }
