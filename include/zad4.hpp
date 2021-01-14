@@ -6,12 +6,18 @@
 double obliczMake ( const std::vector<Tagliatelle>& v)
 {
 int c=v.size();
-double suma=0.0;
+double M=0.0;
 for(auto i: v)
 {
-  suma += (i.ileMaki(c));
+  M += (i.ileMaki(c));
   c--;
 }
+if (M>100){throw 12;}
+else if (M>50) {throw 16.4;}
+else return M;
+
+
+
 }
 
 /*
