@@ -8,7 +8,9 @@
 // tutaj klasa Penne
 class Penne : public Makaron
 {
-
+  public:
+  double ileMaki(unsigned P) const 
+  {return P*L*W*(1. -R)*C*2;}
 };
 
 // tutaj definicja metody gotujMakaron
