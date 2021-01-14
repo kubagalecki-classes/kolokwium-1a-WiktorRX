@@ -9,8 +9,8 @@
 class Penne : public Makaron
 {
   public:
-  double ileMaki(unsigned int P) const override
-  {return P*L*W*(1. -R)*C*2;}
+  double ileMaki(unsigned int P) const
+  {return P*2;}
 };
 
 // tutaj definicja metody gotujMakaron
