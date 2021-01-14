@@ -9,7 +9,7 @@
 class Penne : public Makaron
 {
   public:
-  double ileMaki(unsigned P) const override
+  double ileMaki(unsigned int P) const override
   {return P*L*W*(1. -R)*C*2;}
 };
 
