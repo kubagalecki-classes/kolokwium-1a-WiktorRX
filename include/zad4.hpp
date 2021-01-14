@@ -3,7 +3,7 @@
 #include <vector>
 
 // tutaj funkcja obliczMake
-double obliczMake ( const std::vectpr<Tagliatelle>& v)
+double obliczMake ( const std::vector<Tagliatelle>& v)
 {
   int s = v.size();
 double suma=0.0;
