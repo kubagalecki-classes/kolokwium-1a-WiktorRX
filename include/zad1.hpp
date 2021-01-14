@@ -10,7 +10,7 @@ class Makaron
     ~Makaron() = default;
 };
 
-class Tagliatelle //: public Makaron
+class Tagliatelle : public Makaron
 {
 public:
 Tagliatelle(double l, double w, double r) : L(l), W(w), R(r) {}
