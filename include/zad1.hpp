@@ -1,19 +1,21 @@
 #include "catch.hpp"
+#include <string>
+using namespace std;
 
 class Makaron
 {
   public:
     virtual double ileMaki(unsigned) = 0;
-    
+    static const double gotujMakaron(const std::string&);
+    ~Makaron() = default;
 };
-
 
 class Tagliatelle : public Makaron
 {
 public:
 Tagliatelle(double l, double w, double r) : L(l), W(w), R(r) {}
 Tagliatelle() : L(0.5), W(0.5), R(0.5) {}
-double ileMaki(unsigned P) const 
+override double ileMaki(unsigned P) const 
 {
   return P*L*W*(1. -R)*C;
 }
