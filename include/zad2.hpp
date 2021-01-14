@@ -14,7 +14,7 @@ class Penne : public Makaron
 };
 
 // tutaj definicja metody gotujMakaron
-Makaron* gotujMakaron(const std::string& s)
+Makaron* Makaron::gotujMakaron(const std::string& s)
 {
   char pierw = s.front();
   char ost = s.back();
