@@ -1,6 +1,14 @@
 #include "catch.hpp"
 
-class Tagliatelle
+class Makaron
+{
+  public:
+    virtual double ileMaki(unsigned) = 0;
+    
+};
+
+
+class Tagliatelle : public Makaron
 {
 public:
 Tagliatelle(double l, double w, double r) : L(l), W(w), R(r) {}
@@ -17,8 +25,6 @@ double R; //propor jajka:maka
 static const double C;  //pewna stała
 
 };
-
-
 
 
 // Zad2
