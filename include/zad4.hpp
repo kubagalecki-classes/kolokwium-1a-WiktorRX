@@ -15,9 +15,6 @@ for(auto i: v)
 if (M>100){throw 12;}
 else if (M>50) {throw 16.4;}
 else return M;
-
-
-
 }
 
 /*
